@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import DateTimeChecker from "./components/DateTimeChecker/DateTimeChecker";
+import { Helmet } from "react-helmet";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Helmet>
+                <title>Date Time Checker</title>
+            </Helmet>
+            <div className="App w-screen h-screen">
+                <div className="w-full h-full flex justify-center items-center">
+                    <DateTimeChecker></DateTimeChecker>
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default App;
