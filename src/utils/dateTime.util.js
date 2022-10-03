@@ -72,7 +72,6 @@ const dayInMonth = (month = 0, year = 0) => {
             day = 31;
             break;
         }
-        case 1:
         case 4:
         case 6:
         case 9:
