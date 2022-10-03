@@ -58,7 +58,10 @@ export default function MessageModal({
                                             className="block w-[40px] h-[40px]"
                                             alt=""
                                         />
-                                        <p className="text-md text-zinc-900">
+                                        <p
+                                            className="text-md text-zinc-900"
+                                            id="message"
+                                        >
                                             {message}
                                         </p>
                                     </div>

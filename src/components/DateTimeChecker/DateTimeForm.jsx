@@ -24,6 +24,7 @@ export default function DateTimeForm({ handleCheckDate = () => {} }) {
                     </label>
                     <input
                         {...register("day")}
+                        id="day"
                         type="text"
                         name="day"
                         className="block shadow-sm w-[200px] py-1 px-2  border border-slate-100 focus:border-sky-400 focus:outline-sky-400 rounded-sm"
@@ -35,6 +36,7 @@ export default function DateTimeForm({ handleCheckDate = () => {} }) {
                     </label>
                     <input
                         {...register("month")}
+                        id="month"
                         type="text"
                         name="month"
                         className="block shadow-sm w-[200px] py-1 px-2  border border-slate-100 focus:border-sky-400 focus:outline-sky-400 rounded-sm"
@@ -46,6 +48,7 @@ export default function DateTimeForm({ handleCheckDate = () => {} }) {
                     </label>
                     <input
                         {...register("year")}
+                        id="year"
                         type="text"
                         name="year"
                         className="block shadow-sm w-[200px] py-1 px-2 border border-slate-100 focus:border-sky-400 focus:outline-sky-400 rounded-sm"
@@ -56,6 +59,7 @@ export default function DateTimeForm({ handleCheckDate = () => {} }) {
                         {" "}
                         <input
                             type="reset"
+                            id="reset"
                             className="px-5 py-1 bg-slate-200 rounded-sm hover:bg-sky-300 focus:bg-sky-200 cursor-pointer transition duration-150 ease-in-out"
                             onClick={() => {
                                 reset();
@@ -65,6 +69,7 @@ export default function DateTimeForm({ handleCheckDate = () => {} }) {
                         <input
                             className="px-5 py-1 bg-slate-200 rounded-sm hover:bg-sky-300 focus:bg-sky-400 cursor-pointer transition duration-150 ease-in-out"
                             type="submit"
+                            id="check"
                             value="Check"
                         />
                     </div>
