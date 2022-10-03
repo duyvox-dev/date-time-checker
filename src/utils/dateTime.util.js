@@ -48,19 +48,18 @@ const isValidDateRange = (day = 0, month = 0, year = 0) => {
         throw err;
     }
 };
-const isLeapYear = (year = 1) => {
-    let isLeap = false;
+const isLeapYear = (year = 0) => {
     if (year % 400 === 0) {
-        isLeap = true;
-    } else if (year % 100 === 0) {
-        isLeap = true;
-    } else if (year % 4 === 0) {
-        isLeap = true;
+        return true;
     }
-    return isLeap;
+    if (year % 100 === 0) {
+        return false;
+    }
+    if (year % 4 === 0) return true;
+    return false;
 };
 const dayInMonth = (month = 0, year = 0) => {
-    let day = null;
+    let day = 0;
     switch (month) {
         case 1:
         case 3:
